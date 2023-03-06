@@ -1,3 +1,8 @@
+provider "aws" {
+  region="us-east-1"
+}
+
+
 resource "aws_emr_cluster" "cluster" {
   name          = "emr-cluster"
   release_label = "emr-6.8.0"
